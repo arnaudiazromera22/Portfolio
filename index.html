@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnau Díaz Romera | Senior Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Arnau Díaz Romera, a Senior Full Stack Developer specializing in building modern web applications.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('YOUR_PUBLIC_KEY');
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Arnau<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="subtitle">Hi! I'm Arnau</span>
+                <h1>Arnau Díaz Romera</h1>
+                <h2 class="typing-text">1st Year ASIX Student | Cybersecurity & Infrastructure</h2>
+                <p>For as long as I can remember, I've been fascinated by how computers work on the inside. What started
+                    as curiosity and self-taught tinkering at home has now become my professional training. I am
+                    focusing my studies on infrastructure management and systems security. Although I am just starting
+                    my career, I have a proactive attitude and an analytical capacity focused on understanding how
+                    things break to know how to fix them.</p>
+                <p style="font-style: italic; margin-bottom: 1rem;">"For me, solving a problem is just the first step;
+                    what really motivates me is analyzing the root cause to understand why it happened and how to
+                    prevent it from happening again."</p>
+                <p><strong>What I'm focused on right now:</strong><br>
+                    • <strong>Systems Administration:</strong> Server deployment and initial hardening concepts.<br>
+                    • <strong>Networking:</strong> Network design and configuration from scratch (I understand a network
+                    is not just connecting cables).<br>
+                    • <strong>Terminal Mastery (CLI):</strong> I move freely in the command line, whether in Linux
+                    (Bash) or Windows (CMD/PowerShell). I prefer the terminal over the graphical interface.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+
+            </div>
+            <div class="hero-image">
+                <div class="img-box">
+                    <img src="assets/arnau.jpg" alt="Arnau Díaz Romera">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-column-left">
+                    <h3>About Me: My Journey</h3>
+                    <p>Truth be told, I got into computing because I wanted to create my own video games. But as soon as
+                        I started studying, I discovered that the command line and cybersecurity hooked me much more
+                        than development. I'm not saying I won't program a game someday, but right now my focus has
+                        completely changed.</p>
+                    <p>Even before starting my degree, I was always curious to know how computers worked on the inside
+                        and looked for ways to learn on my own.</p>
+                    <p>I am currently 18 years old and studying 1st year of ASIX (Administration of Network Computer
+                        Systems). If I told you I have years of experience, I would be lying: I have just started. What
+                        I do have is a very fast learning capacity and a lot of desire to get my hands dirty with real
+                        projects.</p>
+
+                    <div class="education-experience">
+                        <div class="edu-box">
+                            <h4>Education</h4>
+                            <p>Studying 1st Year of Higher Degree in Administration of Network Computer Systems (ASIX).
+                            </p>
+                        </div>
+                        <div class="edu-box">
+                            <h4>Certifications</h4>
+                            <p>Preparing for future certifications in Linux and Networks.</p>
+                        </div>
+                        <div class="edu-box">
+                            <h4>Experience</h4>
+                            <p>Personal projects, home lab, and intensive practice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-column-right">
+                    <h3>What I can do (and what I'm learning)</h3>
+                    <p>In 1st year of ASIX we don't stop touching technology, and I take advantage of every hour of
+                        class and my free time to practice:</p>
+                    <div class="skills-table-container">
+                        <table class="skills-table">
+                            <thead>
+                                <tr>
+                                    <th>Area</th>
+                                    <th>Technologies I use</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Systems</strong></td>
+                                    <td>Daily use of Linux (Ubuntu/Debian) via terminal and basic Windows Server
+                                        management.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Networks</strong></td>
+                                    <td>Protocol configuration, IP addressing, and simulations in Packet Tracer.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Virtualization</strong></td>
+                                    <td>Creation of testing environments with VirtualBox and VMware.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Hardware</strong></td>
+                                    <td>Assembling equipment from scratch, maintenance, and troubleshooting.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>What drives me</h3>
+                    <p>What I like most about systems administration is that you never get bored. There is always a log
+                        to check, a service to configure, or a network to secure.</p>
+                    <p>As I always say, it's not enough for something to just "work". I need to understand why it worked
+                        or why it failed.</p>
+                    <p>My goal is to finish the degree knowing how to set up solid and secure infrastructures. I am
+                        motivated by technical challenges, especially those that make others give up.</p>
+
+                    <div class="resume-section">
+                        <h3>My Resume!</h3>
+                        <p>For more comprehensive information, whether about my current courses or projects carried out
+                            during classes, feel free to explore my CV, I invite you to take a look:</p>
+                        <div class="resume-actions">
+                            <a href="assets/cv.pdf" class="btn-primary" download>Download CV <i
+                                    class="fas fa-download"></i></a>
+                            <a href="#" class="btn-secondary" target="_blank">View my LinkedIn profile <i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <span>Portfolio</span>
+                <h2>Recent Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/project1.png" alt="Aurora Analytics">
+                        <div class="project-overlay">
+                            <a href="#" class="icon"><i class="fas fa-link"></i></a>
+                            <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">Data Visualization</span>
+                        <h3>Aurora Analytics Dashboard</h3>
+                        <p>A comprehensive real-time analytics platform for enterprise data monitoring.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Placeholder using same image or different context) -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <!-- Using css gradient/placeholder for variety if needed, but reusing asset for now or simple div -->
+                        <div class="placeholder-img"
+                            style="background: linear-gradient(45deg, #1e293b, #0f172a); height: 100%; display: flex; align-items: center; justify-content: center; color: #64748b;">
+                            <i class="fas fa-shopping-cart fa-3x"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="icon"><i class="fas fa-link"></i></a>
+                            <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">E-Commerce</span>
+                        <h3>Nexus Shop</h3>
+                        <p>Full-featured e-commerce platform with Stripe integration and inventory management.</p>
+                        <div class="tech-stack">
+                            <span>Next.js</span>
+                            <span>Stripe</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="placeholder-img"
+                            style="background: linear-gradient(45deg, #1e293b, #0f172a); height: 100%; display: flex; align-items: center; justify-content: center; color: #64748b;">
+                            <i class="fas fa-robot fa-3x"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="icon"><i class="fas fa-link"></i></a>
+                            <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">AI Tool</span>
+                        <h3>Smart Tasker</h3>
+                        <p>Productivity application leveraging AI to categorize and prioritize daily tasks.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more">
+                <a href="#" class="btn-secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="testimonial-wrapper">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Arnau is one of those who never gives up on network labs. If a 'ping' doesn't go through, he
+                        doesn't stop until he finds where the configuration error is. It's a relief to have him in the
+                        work group."</p>
+                    <div class="client-info">
+                        <h4>Rafa</h4>
+                        <span>Classmate in ASIX</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"He has an uncommon curiosity for his age. He's not satisfied with the server just working; he
+                        always asks what happened 'underneath' when something fails. That attitude is what ends up
+                        shaping a good systems administrator."</p>
+                    <div class="client-info">
+                        <h4>Systems Professor</h4>
+                        <span>Academic Feedback</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I gave him my laptop because it wouldn't boot, and besides fixing it, he explained what had
+                        happened so it wouldn't happen to me again. You can tell he knows what he's talking about and,
+                        above all, that he loves to help."</p>
+                    <div class="client-info">
+                        <h4>Friend / Occasional "Client"</h4>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-title">
+                <span>My Blog: A Technician's Diary</span>
+                <h2>Where I share what I'm learning and my lab tests.</h2>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Server and Network Equipment" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="blog-content">
+                        <div class="meta">
+                            <span><i class="far fa-calendar-alt"></i> January 28, 2026</span>
+                            <span><i class="far fa-user"></i> Arnau</span>
+                        </div>
+                        <h3>Tinkering with Systems and Networks</h3>
+                        <p>Here you will find my own tutorials (like my first steps with Linux or AWS), cybersecurity
+                            news that I find interesting, and reflections on what I'm discovering in the higher degree.
+                        </p>
+                        <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db"
+                            alt="Organized Workspace with Notes" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="blog-content">
+                        <div class="meta">
+                            <span><i class="far fa-calendar-alt"></i> January 25, 2026</span>
+                            <span><i class="far fa-user"></i> Arnau</span>
+                        </div>
+                        <h3>Organization and Quick Guides</h3>
+                        <p>I have organized the blog by categories (Systems, Networks, Security) and tags so it's easy
+                            to find my notes or the command cheat sheets I create.</p>
+                        <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+                            alt="Community and Networking" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="blog-content">
+                        <div class="meta">
+                            <span><i class="far fa-calendar-alt"></i> January 20, 2026</span>
+                            <span><i class="far fa-user"></i> Arnau</span>
+                        </div>
+                        <h3>Networking and Community</h3>
+                        <p>I like to share what I do on LinkedIn to connect with other IT students and professionals. My
+                            idea is to create a community where we can help each other with labs and typical errors that
+                            happen to all of us.</p>
+                        <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <span>What I Do</span>
+                <h2>My Services (or how I can help you)</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development (Junior)</h3>
+                    <p style="margin-bottom: 15px;">Creation of modern, fast websites that look good on any mobile
+                        device.</p>
+                    <div style="text-align: left; font-size: 0.95rem; line-height: 1.6; color: #cbd5e1;">
+                        <p style="margin-bottom: 8px;"><strong style="color: #38bdf8;">What's included:</strong>
+                            Interface design, site development, database management, and server upload.</p>
+                        <p style="margin-bottom: 8px;"><strong style="color: #38bdf8;">Benefits:</strong> Internet
+                            presence, basic SEO, and an easy-to-use site for your clients.</p>
+                        <p><strong style="color: #38bdf8;">Price:</strong> From 200€ (depending on what you need).</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Technical Support & Advice</h3>
+                    <p style="margin-bottom: 15px;">If you don't know what PC to buy or your computer is slow, I'll help
+                        you optimize it.</p>
+                    <div style="text-align: left; font-size: 0.95rem; line-height: 1.6; color: #cbd5e1;">
+                        <p style="margin-bottom: 8px;"><strong style="color: #38bdf8;">What's included:</strong>
+                            Hardware and software review, component recommendation, and system cleaning.</p>
+                        <p style="margin-bottom: 8px;"><strong style="color: #38bdf8;">Benefits:</strong> Saving on
+                            unnecessary repairs, better performance, and real advice (without complicated technical
+                            jargon).</p>
+                        <p><strong style="color: #38bdf8;">Price:</strong> 20€ / hour.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Networks & Systems (Small Scale)</h3>
+                    <p style="margin-bottom: 15px;">Configuration and maintenance of local networks and servers for
+                        homes or small offices.</p>
+                    <div style="text-align: left; font-size: 0.95rem; line-height: 1.6; color: #cbd5e1;">
+                        <p style="margin-bottom: 8px;"><strong style="color: #38bdf8;">What's included:</strong>
+                            Linux/Windows server installation, router/Wi-Fi config, backups, and remote support.</p>
+                        <p style="margin-bottom: 8px;"><strong style="color: #38bdf8;">Benefits:</strong> A network that
+                            doesn't fail, basic security against attacks, and peace of mind keeping your data safe.</p>
+                        <p><strong style="color: #38bdf8;">Price:</strong> Personalized quote depending on the setup.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <span>Visual Content</span>
+                <h2>Gallery (My Day-to-Day)</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5" alt="Workspace Setup"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>My Setup</h3>
+                        <p>This is my corner. A simple but optimized environment for studying, practicing with virtual
+                            machines, and spending hours in the terminal.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                            alt="Collaboration and Learning" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Education & Networking</h3>
+                        <p>Staying up to date is key to not falling behind. Apart from class, I'm taking Google for
+                            Developers courses to learn about Cloud and new technologies. It's my way of complementing
+                            the degree and seeing how real environments work.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+                            alt="Live Development Process" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>In Action</h3>
+                        <p>A snapshot of a debugging session. There's nothing better than the feeling of finding the
+                            root of a problem after investigating for a while.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Achievements & Practical Experience</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Graduated in SMX (Microcomputer Systems and Networks)</h3>
+                    <p><strong style="color: #38bdf8;">The milestone:</strong> I successfully completed the Intermediate
+                        Degree, which gave me the technical foundation I am applying now in the Higher Degree.</p>
+                    <p><strong style="color: #38bdf8;">What I learned:</strong> I went from liking computers to knowing
+                        how to assemble them, configure them, and understand how a real local network works.</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Internship (FCT)</h3>
+                    <p><strong style="color: #38bdf8;">The context:</strong> I did my Intermediate Degree internship in
+                        a real company, assisting with IT maintenance and technical support.</p>
+                    <p><strong style="color: #38bdf8;">The importance:</strong> It was my first contact with the working
+                        world. I learned that in a company it's not enough to "restart and that's it"; you have to be
+                        fast, organized, and know how to deal with the client when something doesn't work.</p>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-server"></i>
+                    <h3>Setting up my own "Home Lab"</h3>
+                    <p><strong style="color: #38bdf8;">The project:</strong> On my own, I have set up a small testing
+                        environment at home using old equipment and virtual machines.</p>
+                    <p><strong style="color: #38bdf8;">The achievement:</strong> I managed to run services that sounded
+                        Greek to me before, like file servers or small Linux environments. It's where I allow myself to
+                        "break things" to learn how to fix them.</p>
+                </div>
+                <!-- New 4th Item -->
+                <div class="achievement-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Featured Projects from 1st Year ASIX</h3>
+                    <p><strong style="color: #38bdf8;">Day to Day:</strong> In Network and Systems classes, I always try
+                        to go a step further than the statement. If the teacher asks to configure a basic network, I try
+                        to understand how to secure it or automate some steps with a simple script.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-title">
+                <span>Frequently Asked Questions (FAQ)</span>
+                <h2>Frequently Asked Questions (FAQ)</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What is your main background and experience?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I have completed the Intermediate Degree in Microcomputer Systems and Networks (SMX), where I
+                            learned the basics of equipment assembly and technical support. Now, at 18, I am in 1st year
+                            of ASIX to delve deeper into server administration and complex networks. My real experience
+                            comes from my SMX internship and the projects I set up on my own at home.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What technologies do you use in your projects?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>On a daily basis, what I touch most is Linux (Ubuntu/Debian) and Windows Server. For network
+                            labs I use Cisco Packet Tracer, and to set up my test environments I use VirtualBox or
+                            VMware. I also like to automate simple tasks using scripts in Bash.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How do you tackle technical challenges when something fails?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I'm quite curious and, above all, stubborn. If something doesn't work or a service doesn't
+                            run, I don't give up. I like to check the logs, investigate the error in the documentation,
+                            and not stop until I find the root cause. For me, making something work again is fine, but
+                            understanding why it broke is what really teaches me.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How can I contact you for a collaboration or interview?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The easiest way is to contact me via LinkedIn or send me an email (links below). I am very
+                            motivated to find opportunities where I can apply what I know and, above all, keep learning
+                            from people with more experience in the systems and cybersecurity sector.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="details">
+                            <h4>Location</h4>
+                            <p>Barcelona, Spain</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="details">
+                            <h4>Email</h4>
+                            <p>arnau8730@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="details">
+                            <h4>Phone</h4>
+                            <p>+34 699 999 999</p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086782.909670087!2d-4.493976214371493!3d40.23199859231267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2ses!4v1706544000000!5m2!1sen!2ses"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Arnau<span>.</span></div>
+                <p>&copy; 2026 Arnau Díaz Romera. All Rights Reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smartphone Call/Chat Modal -->
+    <div id="phone-modal" class="phone-modal hidden">
+        <div class="phone-bezel">
+            <div class="phone-camera"></div>
+            <div class="phone-screen">
+                <div class="chat-header">
+                    <div class="header-left">
+                        <i class="fas fa-chevron-left" id="close-phone"></i>
+                        <div class="avatar-circle">
+                            <img src="assets/arnau.jpg" alt="Arnau">
+                            <div class="online-indicator"></div>
+                        </div>
+                        <div class="header-info">
+                            <h3>Arnau</h3>
+                            <span>Online</span>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <i class="fas fa-video"></i>
+                        <i class="fas fa-phone"></i>
+                    </div>
+                </div>
+
+                <div class="chat-body" id="chat-body">
+                    <div class="date-divider"><span>Today</span></div>
+                    <!-- Messages will be injected here -->
+                </div>
+
+                <div class="chat-footer">
+                    <i class="fas fa-plus"></i>
+                    <input type="text" id="chat-input" placeholder="Message...">
+                    <button id="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="home-bar"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

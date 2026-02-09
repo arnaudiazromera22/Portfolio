@@ -1,0 +1,13 @@
+/* Custom large font for About Me header */
+.about .section-title h2 {
+    font-size: 3rem;
+    /* Larger than standard h2 */
+    margin-bottom: 2rem;
+    /* Reduced from default 4rem to pull text closer, or increase if needed */
+}
+
+/* Ensure spacing after the header before content */
+.about .section-title {
+    margin-bottom: 3rem;
+    /* Adjusting the container margin */
+}
