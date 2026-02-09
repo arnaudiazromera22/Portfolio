@@ -93,165 +93,27 @@ faqItems.forEach(item => {
     }
 });
 
-// Contact Form Handler (Preserved)
-// Smartphone Chat Handler
-const contactForm = document.querySelector('.contact-form');
-const phoneModal = document.getElementById('phone-modal');
-const closePhoneBtn = document.getElementById('close-phone');
-const chatBody = document.getElementById('chat-body');
-const chatInput = document.getElementById('chat-input');
-const chatSendBtn = document.getElementById('chat-send-btn');
+// Contact Form & Phone Modal - REMOVED (Replaced with Google Form Link)
+// Code related to EmailJS and the phone chat interface has been removed as per the request to use a Google Form.
+// Scroll Reveal Animation (Visual Overhaul)
+const revealElements = document.querySelectorAll('section, .service-card, .project-card, .testimonial-card, .achievement-item, .hero-content, .hero-image');
 
-if (contactForm && phoneModal) {
-    // EmailJS Configuration
-    const serviceID = 'YOUR_SERVICE_ID';
-    const templateID = 'YOUR_TEMPLATE_ID';
+// Add base reveal class
+revealElements.forEach(el => el.classList.add('reveal'));
 
-    // 1. Open Phone Handler (Form Submit)
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // Show loading state or immediate feedback?
-        const submitBtn = contactForm.querySelector('button');
-        const originalBtnText = submitBtn.textContent;
-        submitBtn.textContent = 'Sending...';
-
-        // Send Email via EmailJS
-        emailjs.sendForm(serviceID, templateID, contactForm)
-            .then(() => {
-                submitBtn.textContent = 'Message Sent!';
-
-                // Open Phone Modal
-                phoneModal.classList.remove('hidden');
-
-                // Get user inputs for chat context
-                const nameInput = contactForm.querySelector('input[type="text"]');
-                const msgInput = contactForm.querySelector('textarea');
-                const userMsg = msgInput.value;
-
-                // Add User's initial message to chat
-                addMessage(userMsg, 'sent');
-                scrollToBottom();
-
-                // Specific Auto-Reply for Contact Form
-                setTimeout(() => {
-                    showTypingIndicator();
-                    setTimeout(() => {
-                        removeTypingIndicator();
-                        const reply = "I'm currently unavailable. An email has been sent to the website address regarding your inquiry.";
-                        addMessage(reply, 'received');
-                        playSound('receive');
-                        scrollToBottom();
-                    }, 1500);
-                }, 1000);
-
-                // Reset form
-                contactForm.reset();
-                setTimeout(() => { submitBtn.textContent = originalBtnText; }, 3000);
-            }, (err) => {
-                submitBtn.textContent = 'Error!';
-                alert('Failed to send email. Please try again later.');
-                console.error('EmailJS Error:', err);
-                submitBtn.textContent = originalBtnText;
-            });
-    });
-
-    // 2. Close Phone Handler
-    closePhoneBtn.addEventListener('click', () => {
-        phoneModal.classList.add('hidden');
-    });
-
-    // Chat State
-    let conversationState = 'initial'; // initial, waiting_for_inquiry
-
-    // 3. Chat Interaction (Send New Message)
-    function handleChatSubmit() {
-        const text = chatInput.value.trim();
-        if (text) {
-            addMessage(text, 'sent');
-            chatInput.value = '';
-            scrollToBottom();
-
-            // Handling Chat Logic
-            setTimeout(() => {
-                showTypingIndicator();
-                setTimeout(() => {
-                    removeTypingIndicator();
-
-                    if (conversationState === 'initial') {
-                        // First interaction in chat (not from form)
-                        const reply = "I'm currently offline. Please leave your message here, and it will be automatically sent to arnau8730@gmail.com.";
-                        addMessage(reply, 'received');
-                        conversationState = 'waiting_for_inquiry';
-                    } else if (conversationState === 'waiting_for_inquiry') {
-                        // User sent the inquiry
-                        // Send this text as an email
-                        const params = {
-                            from_name: "Chat User",
-                            message: text,
-                            reply_to: "arnau8730@gmail.com" // simplistic fallback
-                        };
-
-                        emailjs.send(serviceID, templateID, params)
-                            .then(() => {
-                                addMessage("Message sent successfully.", 'received');
-                            })
-                            .catch((err) => {
-                                console.error('EmailJS Error:', err);
-                                addMessage("There was an error sending the message.", 'received');
-                            });
-
-                        conversationState = 'initial'; // Reset or keep? Resetting allows new inquiries.
-                    }
-
-                    scrollToBottom();
-                }, 1500);
-            }, 1000);
+const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            // Optional: Stop observing once revealed for one-time animation
+            // observer.unobserve(entry.target); 
         }
-    }
-
-    // Indicators
-    function showTypingIndicator() {
-        const typingDiv = document.createElement('div');
-        typingDiv.id = 'typing-indicator';
-        typingDiv.classList.add('message', 'received', 'typing');
-        typingDiv.innerHTML = `
-            <span></span>
-            <span></span>
-            <span></span>
-        `;
-        chatBody.appendChild(typingDiv);
-        scrollToBottom();
-    }
-
-    function removeTypingIndicator() {
-        const indicator = document.getElementById('typing-indicator');
-        if (indicator) indicator.remove();
-    }
-
-    function playSound(type) {
-        // Placeholder for sound effect
-    }
-
-    // Scroll Reveal Animation (Visual Overhaul)
-    const revealElements = document.querySelectorAll('section, .service-card, .project-card, .testimonial-card, .achievement-item, .hero-content, .hero-image');
-
-    // Add base reveal class
-    revealElements.forEach(el => el.classList.add('reveal'));
-
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                // Optional: Stop observing once revealed for one-time animation
-                // observer.unobserve(entry.target); 
-            }
-        });
-    }, {
-        root: null,
-        threshold: 0.15, // Trigger when 15% visible
-        rootMargin: "0px"
     });
+}, {
+    root: null,
+    threshold: 0.15, // Trigger when 15% visible
+    rootMargin: "0px"
+});
 
-    revealElements.forEach(el => revealObserver.observe(el));
-}
+revealElements.forEach(el => revealObserver.observe(el));
+
