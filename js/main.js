@@ -43,6 +43,19 @@ function showSection(targetId) {
         targetSection.classList.remove('hidden');
         targetSection.classList.add('fade-in');
 
+        // Safely reset videos and iframes ONLY when entering the projects section
+        if (targetId === 'projects') {
+            targetSection.querySelectorAll('video').forEach(video => {
+                video.pause();
+                video.currentTime = 0; 
+            });
+            
+            targetSection.querySelectorAll('iframe').forEach(iframe => {
+                const currentSrc = iframe.src.split('?')[0].split('#')[0]; 
+                iframe.src = currentSrc + '?t=' + Date.now() + '#page=1&view=FitH';
+            });
+        }
+
         // Scroll to top when switching views for a "page turn" feel
         window.scrollTo(0, 0);
     }
@@ -117,3 +130,23 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 
 revealElements.forEach(el => revealObserver.observe(el));
 
+// Force media links to open from the start when clicking the overlay
+document.querySelectorAll('.project-overlay a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Prevent default caching by appending a timestamp query param
+        let baseHref = this.getAttribute('href');
+        
+        // If it already has a timestamp, just use the base
+        if (baseHref.includes('?')) {
+            baseHref = baseHref.split('?')[0];
+        } else if (baseHref.includes('#')) {
+            baseHref = baseHref.split('#')[0];
+        }
+        
+        if (baseHref.endsWith('.pdf')) {
+            this.href = `${baseHref}?t=${new Date().getTime()}#page=1`;
+        } else if (baseHref.endsWith('.mp4')) {
+            this.href = `${baseHref}?t=${new Date().getTime()}#t=0`;
+        }
+    });
+});
