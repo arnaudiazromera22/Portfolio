@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Arnau Díaz Romera</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            /* Fondo oscuro para que resalte la página en blanco/azul */
+            background-color: #525659; 
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cv-container {
+            width: 800px;
+            min-height: 1131px; /* Proporción A4 aprox */
+            background-color: white;
+            display: flex;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        /* --- COLUMNA IZQUIERDA --- */
+        .left-column {
+            width: 35%;
+            background-color: #bbdefb; /* Color azul claro del PDF */
+            padding: 40px 20px;
+            color: #111;
+        }
+
+        .photo-placeholder {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin: 0 auto 30px auto;
+            background-color: transparent;
+        }
+
+        .name-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .name-container h1 {
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .name-container h2 {
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: normal;
+            border-top: 1px solid #111;
+            border-bottom: 1px solid #111;
+            padding: 8px 0;
+        }
+
+        .section-left {
+            margin-bottom: 30px;
+        }
+
+        .section-title-left {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 2px solid #111;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .contact-info p {
+            font-size: 12px;
+            margin-bottom: 12px;
+            text-align: left;
+        }
+
+        .list-items {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .list-items li {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .skills-list li {
+            margin-bottom: 15px;
+        }
+
+        .skills-list strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+        
+        .skills-list span {
+            display: block;
+            color: #333;
+            line-height: 1.3;
+        }
+
+        /* --- COLUMNA DERECHA --- */
+        .right-column {
+            width: 65%;
+            padding: 40px 30px;
+        }
+
+        .section-right {
+            margin-bottom: 40px;
+        }
+
+        .section-title-right {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 2px solid #111;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .profile-text {
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .item-row {
+            display: flex;
+            margin-bottom: 25px;
+        }
+
+        .item-left {
+            width: 25%;
+            font-size: 12px;
+            font-weight: bold;
+            color: #444;
+            padding-right: 15px;
+        }
+
+        .item-right {
+            width: 75%;
+        }
+
+        .item-title {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .item-desc {
+            font-size: 13px;
+            line-height: 1.5;
+            text-align: justify;
+            color: #222;
+        }
+
+        .education-subtitle {
+             font-size: 13px;
+             font-weight: bold;
+             margin-bottom: 5px;
+        }
+        
+        .education-desc {
+            font-size: 12px;
+            color: #444;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="left-column">
+            
+            <div class="photo-placeholder" style="overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                <img src="arnau_sin_sombras.png" alt="Foto de Arnau" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%; transform: scale(1.2);">
+            </div>
+
+            <div class="name-container">
+                <h1>ARNAU<br>DÍAZ ROMERA</h1>
+                <h2>ADMINISTRACIÓN DE SISTEMAS<br>& CIBERSEGURIDAD</h2>
+            </div>
+
+            <div class="section-left">
+                <h3 class="section-title-left">CONTACTO</h3>
+                <div class="contact-info">
+                    <p style="margin-bottom: 8px;"><strong>Localización:</strong><br>Carrer Cisterna 109, Terrassa</p>
+                    <p style="margin-bottom: 8px;"><strong>Email:</strong><br>arnaudiazromera@gmail.com</p>
+                    <p style="margin-bottom: 8px;"><strong>Teléfono:</strong><br>644 57 55 94</p>
+                </div>
+            </div>
+
+            <div class="section-left">
+                <h3 class="section-title-left">HABILIDADES</h3>
+                <ul class="list-items skills-list">
+                    <li>
+                        <strong>Windows & Linux:</strong>
+                        <span>Nivel medio alto / Configuración de servicios (Ubuntu/Windows)</span>
+                    </li>
+                    <li>
+                        <strong>Redes:</strong>
+                        <span>Configuración y simulación (Packet Tracer)</span>
+                    </li>
+                    <li>
+                        <strong>Hardware:</strong>
+                        <span>Montaje y diagnóstico de averías</span>
+                    </li>
+                    <li>
+                        <strong>Virtualización:</strong>
+                        <span>Creación de laboratorios (VirtualBox)</span>
+                    </li>
+                    <li>
+                        <strong>Scripting:</strong>
+                        <span>Scripts básicos en Bash y Python</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-left">
+                <h3 class="section-title-left">APTITUDES</h3>
+                <ul class="list-items">
+                    <li>Trabajo en Equipo</li>
+                    <li>Resolución de Problemas</li>
+                    <li>Aprendizaje Rápido</li>
+                    <li>Proactividad</li>
+                    <li>Responsabilidad</li>
+                </ul>
+            </div>
+
+            <div class="section-left">
+                <h3 class="section-title-left">IDIOMAS</h3>
+                <ul class="list-items">
+                    <li><strong>Castellano:</strong> Nativo</li>
+                    <li><strong>Catalán:</strong> Nativo</li>
+                    <li><strong>Inglés:</strong> Nivel Medio</li>
+                </ul>
+            </div>
+
+            <div class="section-left">
+                <h3 class="section-title-left">INTERESES</h3>
+                <ul class="list-items">
+                    <li>Fútbol</li>
+                    <li>Videojuegos</li>
+                    <li>Lectura</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- COLUMNA DERECHA -->
+        <div class="right-column">
+            
+            <div class="section-right">
+                <h3 class="section-title-right">PERFIL PROFESIONAL</h3>
+                <p class="profile-text">
+                    Estudiante de 1º de <strong>ASIX</strong> con gran capacidad de aprendizaje, técnica y pasión por la seguridad informática. Aporto una sólida base en sistemas Windows/Linux y redes.
+                    <br><br>
+                    Busco una oportunidad para aplicar mis conocimientos, crecer junto a expertos del sector y ofrecer soporte técnico de calidad desde el primer día.
+                </p>
+            </div>
+
+            <div class="section-right">
+                <h3 class="section-title-right">PROYECTOS Y EXPERIENCIA</h3>
+                
+                <div class="item-row">
+                    <div class="item-left">
+                        Proyecto<br>Final
+                    </div>
+                    <div class="item-right">
+                        <div class="item-title">INFRAESTRUCTURA IT PARA EMPRESA DE ESCAPE ROOMS VR</div>
+                        <div class="item-desc">
+                            Diseño, despliegue y administración de toda la red informática de una empresa de Escape Rooms de Realidad Virtual.
+                            <br><br>
+                            Implementación de un entorno mixto: <strong>Windows Server</strong> alojando el núcleo de la red corporativa (Active Directory, DNS, DHCP, firewall de terceros y antivirus) junto a <strong>Ubuntu Server</strong> (servicios LDAP y firewall local). Configuración medio avanzada e integración de equipos cliente Windows y Linux con sus respectivos servidores de dominio.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-row">
+                    <div class="item-left">
+                        Proyecto<br>Académico
+                    </div>
+                    <div class="item-right">
+                        <div class="item-title">INFRAESTRUCTURA LINUX SEGURA</div>
+                        <div class="item-desc">
+                            Hardening del sistema operativo, configuración de firewall (UFW) y servicios esenciales: servidor web Apache, FTP seguro y acceso remoto SSH mediante <strong>autenticación de clave pública/privada</strong> para eliminar contraseñas vulnerables. 
+                            <br><br>
+                            Gestión avanzada de permisos y usuarios.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-row">
+                    <div class="item-left">
+                        Proyecto<br>Académico
+                    </div>
+                    <div class="item-right">
+                        <div class="item-title">REDES CORPORATIVAS (CISCO)</div>
+                        <div class="item-desc">
+                            Diseño y simulación de redes locales básicas en <strong>Cisco Packet Tracer</strong>. 
+                            <br><br>
+                            Configuración de diferentes direcciones IP, conexión funcional entre equipos y routers para asegurar la comunicación en entornos de prueba básicos.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-right">
+                <h3 class="section-title-right">EDUCACIÓN</h3>
+                
+                <div class="item-row">
+                    <div class="item-left">
+                        2025<br>Actualidad
+                    </div>
+                    <div class="item-right">
+                        <div class="item-title">CFGS ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS EN RED (ASIX)</div>
+                        <div class="education-subtitle">COLEGIO VEDRUNA VALL</div>
+                        <div class="education-desc">Especialización en Ciberseguridad. (En curso)</div>
+                    </div>
+                </div>
+
+                <div class="item-row">
+                    <div class="item-left">
+                        2023<br>2025
+                    </div>
+                    <div class="item-right">
+                        <div class="item-title">CFGM SISTEMAS MICROINFORMÁTICOS Y REDES (SMX)</div>
+                        <div class="education-subtitle">INSTITUTO NICOLAU COPÈRNIC</div>
+                        <div class="education-desc">Ciclo Formativo de Grado Medio finalizado.</div>
+                    </div>
+                </div>
+
+                <div class="item-row">
+                    <div class="item-left">
+                        2023
+                    </div>
+                    <div class="item-right">
+                        <div class="item-title">EDUCACIÓN SECUNDARIA OBLIGATORIA (ESO)</div>
+                        <div class="education-subtitle">INSTITUTO INS TERRASSA</div>
+                        <div class="education-desc">Educación obligatoria finalizada.</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
