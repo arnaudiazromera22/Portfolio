@@ -1,3 +1,5 @@
+console.log("%c Portfolio Status: Operational. Welcome, technician.", "color: #38bdf8; font-weight: bold;");
+
 // Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
@@ -150,3 +152,5 @@ document.querySelectorAll('.project-overlay a').forEach(link => {
         }
     });
 });
+
+if(document.getElementById('year')) document.getElementById('year').textContent = new Date().getFullYear();
